@@ -1,0 +1,546 @@
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('Fonts/825424/2ba6fbd5-9c17-4733-af15-f49fbecc5c15.woff') format('woff');
+  src: url('Fonts/825424/75e1af8f-1a4c-475a-8b53-f27e52822b6b.woff2');
+  font-weight: normal;
+}
+
+body {
+  background: #000000;
+  font-family: 'Neue Haas Grotesk';
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+body, html {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+p {
+  color: #ffffff;
+  font-family: 'Neue Haas Grotesk';
+}
+
+/* Banner */
+#banner {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 84vh;
+  width: 90vw;
+  max-width: 800px;
+}
+
+@media (min-width: 451px) and (max-width: 760px){
+  #banner {
+    top: 100px;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1079px){
+  #banner {
+    top: 150px;
+  }
+}
+
+@media (max-width: 450px){
+  #banner {
+    top: 60px;
+  }
+  #header {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 1080px){
+  #banner {
+    top: 175px;
+  }
+}
+
+
+
+
+/*Animation*/
+#product-video, #landingImg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-x: hidden;
+}
+
+#landingImg {
+  height: 600px;
+}
+
+
+@media (min-width: 769px){
+  #product-video, #landingImg {
+    top: 620px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 769px){
+  #product-video, #landingImg{
+    top: 600px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 575px){
+  #product-video, #landingImg{
+    top: 350px;
+  }
+}
+
+@media (max-width: 450px){
+  #product-video, #landingImg {
+    top: 280px;
+  }
+}
+
+
+
+
+/*Hitwords*/
+#hitwords {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#hitwords img {
+  margin-bottom: 100px;
+  overflow-x: hidden;
+}
+
+
+
+@media (max-width: 450px){
+  #hitwords {
+    top: 700px;
+  }
+  #hitwords img {
+    width: 250px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 575px){
+  #hitwords {
+    top: 750px;
+  }
+  #hitwords img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 768px){
+  #hitwords {
+    top: 1150px;
+  }
+  #hitwords img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px){
+  #hitwords {
+    top: 1500px;
+  }
+}
+
+
+
+#landing_page {
+  margin-bottom: 100px;
+  max-width: 100%;
+}
+
+
+/* ABOUT*/
+#about, #stockists {
+  margin-bottom: 200px;
+  display: none;
+}
+
+#about .col-10 , #stockists .col-10{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+.text-normal {
+  color: #ffffff;
+}
+
+@media (max-width: 577px){
+  .text-normal {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 577px){
+  .text-normal {
+    font-size: 1.7rem;
+  }
+}
+
+#background {
+  margin-top: 50px;
+}
+
+@media (min-width: 577px){
+  .text-shop {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 577px){
+  .text-shop {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+/*footer*/
+.footerText , .footerTextSmall{
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-bottom: 15px;
+}
+
+.footerText {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-left: 0px;
+}
+
+.footerText:hover {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+
+
+
+@media (min-width: 380px) {
+  .footerTextSmall {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 380px) {
+  .footerTextSmall {
+    font-size: 0.8rem;
+    color: #ffffff;
+  }
+}
+
+
+.footerTextSmall:hover {
+  text-decoration: none;
+  color: rgba(255,255,255,0.8);
+}
+
+.footer {
+  height: 60px;
+  background: rgba(0,0,0,0.7);
+  -webkit-backdrop-filter:blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+#navbar {
+  position: relative;
+  z-index: 100;
+}
+
+
+canvas {
+  overflow: hidden;
+  width: 100%;
+}
+
+
+/*SHOP*/
+#shop, #hidden, #imprint {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.warenkorb p {
+  margin-bottom: -37px;
+  margin-right: 50px;
+}
+
+#shop img {
+  max-height: 450px;
+  opacity: 1;
+}
+
+#shop img:hover {
+  opacity: 0.7;
+}
+
+#shop a:hover {
+  text-decoration: none;
+}
+
+#shop button {
+  background: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  min-width: 160px;
+  padding: 8px 20px;
+}
+
+#shop button:hover {
+  background: rgba(255,255,255,0.2);
+  color: #ffffff;
+}
+
+
+@media (min-width: 769px){
+  /*
+  #shop, #hidden, #about, #imprint, #stockists{
+    margin-top: 400px;
+  }
+*/
+  #navbar {
+    margin-top: 320px;
+  }
+}
+
+@media (max-width: 470px){
+
+  /*
+  #shop {
+    margin-top: 150px;
+  }
+  */
+
+  #navbar {
+    margin-top: 120px;
+  }
+
+/*
+  #hidden, #about, #imprint, #stockists {
+    margin-top: 200px;
+  }
+
+ */
+}
+@media (min-width: 470px) and (max-width: 769px){
+  /*
+  #shop, #hidden, #about, #imprint, #stockists {
+    margin-top: 260px;
+  }
+
+   */
+
+  #navbar {
+    margin-top: 260px;
+  }
+}
+
+
+/*PopUp*/
+#hidden {
+  display: none;
+}
+
+#hidden a {
+  color: #ffffff;
+}
+
+.version {
+  display: none;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+
+
+
+/*Link Underline*/
+.underline:hover {
+  text-decoration: none;
+}
+
+.underline {
+  position: relative; display: inline-block;
+}
+
+.underline::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #ffffff;
+  height: 1px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.underline:hover:before {
+  right: 0 !important;
+}
+
+
+/* Blurry Background */
+#blur {
+  box-sizing: inherit;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  -webkit-backdrop-filter:blur(4px);
+  backdrop-filter: blur(4px);
+  display: none;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+}
+
+
+
+/* IMPRINT */
+#imprint {
+  display: none;
+}
+
+.margin {
+  margin-top: 100px;
+}
+
+#imprint a {
+  color: #ffffff;
+}
+
+#imprint ul li {
+  color: #ffffff;
+}
+
+#imprint #Contact p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px){
+  #imprint p {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+/* Banner Animation -START */
+@media (min-width: 450px){
+  #slide-background {
+    width: 6668px; /* Image width *2 */
+    height: 201px;
+    background: url("../img/banner_background.png") repeat-x;
+    animation: slide 90s linear infinite;
+  }
+  @keyframes slide {
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-3334px, 0, 0); /* Image width */
+    }
+  }
+
+  #slide-stockists {
+    width: 6576px; /* Image width *2 */
+    height: 200px;
+    background: url("../img/banner_stockists.png") repeat-x;
+    animation: slideS 90s linear infinite;
+  }
+  @keyframes slideS {
+    0%{
+      transform: translate3d(-3288px, 0, 0);
+    }
+    100%{
+      transform: translate3d(+0px, 0, 0); /* Image width */
+    }
+  }
+
+
+  #slide-vision {
+    width: 6862px; /* Image width *2 */
+    height: 200px;
+    background: url("../img/banner_vision.png") repeat-x;
+    animation: slideR 90s linear infinite;
+  }
+  @keyframes slideR {
+    0%{
+      transform: translate3d(-3431px, 0, 0);
+    }
+    100%{
+      transform: translate3d(0, 0, 0); /* Image width */
+    }
+  }
+}
+
+@media (max-width: 450px){
+  #slide-background {
+    width: 3334px; /* Image width *2 */
+    height: 101px;
+    background: url("../img/banner_background_mobile.png") repeat-x;
+    animation: slide 90s linear infinite;
+  }
+  @keyframes slide {
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-1667px, 0, 0); /* Image width */
+    }
+  }
+
+  #slide-stockists {
+    width: 3288px; /* Image width *2 */
+    height: 101px;
+    background: url("../img/banner_stockists_mobile.png") repeat-x;
+    animation: slideS 90s linear infinite;
+  }
+  @keyframes slideS {
+    0%{
+      transform: translate3d(-1644px, 0, 0);
+    }
+    100%{
+      transform: translate3d(+0px, 0, 0); /* Image width */
+    }
+  }
+
+
+  #slide-vision {
+    width: 3431px; /* Image width *2 */
+    height: 100px;
+    background: url("../img/banner_vision_mobile.png") repeat-x;
+    animation: slideR 90s linear infinite;
+  }
+  @keyframes slideR {
+    0%{
+      transform: translate3d(-1716px, 0, 0);
+    }
+    100%{
+      transform: translate3d(0, 0, 0); /* Image width */
+    }
+  }
+}
+/* Banner Animation -END */
