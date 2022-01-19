@@ -20,20 +20,19 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/hamburgers.min.css">
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
 
-  <section id="header" class="container-fluid">
-    <a href="#" onclick="showShop()"><img id="banner" src="img/SynchronSchriftzug.png"></a>
-  </section>
+  <div id="header">
+    <a href="#" onclick="showShop()"><img id="banner" src="img/SY-Schriftzug%20I1%20Web%202.png"></a>
+  </div>
 
   <!-- Navigation -->
   <div id="navbar">
     <div class="row justify-content-center">
       <div class="col-10 col-lg-8 text-center">
-        <div class="row justify-content-center align-items-baseline">
+        <div class="row justify-content-center">
           <div class="col-4 col-md-2 text-center pt-2">
             <a href="#" onclick="showAbout()" class="footerTextSmall">About</a>
           </div>
@@ -53,10 +52,10 @@
     <div class="row justify-content-center align-items-center mb-md-5">
       <div class="col-10 text-right">
         <div class="warenkorb mt-4">
-          <p class="d-none d-sm-block">Your cart</p>
-          <div data-custom-icon-url="img/jobbingbaggo.png"
-               class="ec-cart-widget"></div>
-          <div><script data-cfasync="false"
+          <!--div data-custom-icon-url="img/jobbingbaggo.png"
+               class="ec-cart-widget"></div-->
+          <div class="ec-cart-widget font-weight-bold"></div>
+          <div>BAG<script data-cfasync="false"
                        type="text/javascript"
                        src="https://app.ecwid.com/script.js?34316114&data_platform=code"
                        charset="utf-8"></script><script>Ecwid.init();</script></div>
@@ -67,20 +66,34 @@
     <div class="row justify-content-center align-items-center">
       <div class="col-10">
         <div class="row text-center">
+          <div class="col p-4">
+            <a href="#" onclick="show(3)">
+              <img class="img-fluid shadow-lg" src="img/Synchron_Issue%20One_Cover-klein.jpg">
+              <p class="pt-4 text-uppercase">Pre-Order Issue One <span class="font-italic">Liminal Bridges</span></p>
+            </a>
+            <button type="button" class="btn btn-primary shadow-sm" aria-label="Buy Now" onclick="show(1)">SOON</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center mt-5">
+      <div class="col-10">
+        <div class="row text-center">
           <div class="col-12 col-md-6 col-lg-6 p-4">
             <a href="#" onclick="show(1)">
-              <img class="img-fluid" src="img/Synchron_Cover_final1_vorne_klein.jpg">
-              <p class="pt-4">SYNCHRON PILOT ISSUE, COVER I</p>
+              <img class="img-fluid shadow-lg" src="img/Synchron_Cover_final1_vorne_klein.jpg">
+              <p class="pt-4">PILOT ISSUE, COVER I</p>
             </a>
-            <button type="button" class="btn btn-primary" aria-label="Buy Now" onclick="show(1)">Buy Now</button>
+            <button type="button" class="btn btn-primary shadow-sm" aria-label="Buy Now" onclick="show(1)">BUY NOW</button>
 
           </div>
           <div class="col-12 col-md-6 col-lg-6 p-4">
             <a href="#" onclick="show(2)">
-              <img class="img-fluid" src="img/Synchron_Cover_final2_vorne_klein.jpg">
-              <p class="pt-4">SYNCHRON PILOT ISSUE, COVER II</p>
+              <img class="img-fluid shadow-lg" src="img/Synchron_Cover_final2_vorne_klein.jpg">
+              <p class="pt-4">PILOT ISSUE, COVER II</p>
             </a>
-            <button type="button" class="btn btn-primary" aria-label="Buy Now" onclick="show(2)">Buy Now</button>
+            <button type="button" class="btn btn-primary shadow-sm" aria-label="Buy Now" onclick="show(2)">BUY NOW</button>
           </div>
         </div>
       </div>
@@ -89,11 +102,11 @@
 
 <!-- ABOUT -->
   <section id="about">
-    <div id="slide-background" class="slider">
-      <!--img src="img/banner_background.png"-->
-    </div>
-      <div class="row justify-content-center align-items-center" id="text-about">
+      <div class="row justify-content-center align-items-center mt-5" id="text-about">
         <div class="col-10">
+          <p class="font-weight-bold text-uppercase text-header">
+            Background
+          </p>
           <p class="text-normal">
             Synchron is an independent magazine dedicated to showcasing a broad spectrum of niche contemporary art,
             literature, subcultural practices, especially those developed in antagonism with, or parallel to, the larger
@@ -120,11 +133,11 @@
           </div>
       </div>
 
-    <div id="slide-vision" class="slider">
-      <!--img src="img/banner_vision.png"-->
-    </div>
-    <div class="row justify-content-center align-items-center">
+    <div class="row justify-content-center align-items-center mt-5">
       <div class="col-10">
+        <p class="font-weight-bold text-uppercase text-header">
+          Vision
+        </p>
         <p class="text-normal">
           The main goal for further Synchron issues is to nourish a new platform that can bring together artists, graphic
           designers and writers from various genres to facilitate cross-over collaborations and to open up a space for
@@ -155,18 +168,20 @@
   </section>
 
   <section id="stockists">
-    <div id="slide-stockists" class="slider">
-      <!--img src="img/banner_stockists.png"-->
-    </div>
-    <div class="row justify-content-center align-items-center">
+    <div class="row justify-content-center align-items-center mt-5">
       <div class="col-10">
+        <p class="font-weight-bold text-uppercase text-header">
+          Stockists
+        </p>
         <p class="text-normal">
           Berlin   -   Bücherbogen, Ironic Gallery, Rosa Wolf, She Said<br>
           Copenhagen   -   S7udiostars, Le Petite Voyeur<br>
           Leeds   –   Village books<br>
           Leipzig - MZIN<br>
           London   –   MagCulture, Stack magazines<br>
+          Los Angeles - Skylightbooks<br>
           Paris - Cahier Central<br>
+          Seoul - Magazine Club<br>
           Tokyo   –   Tata bookstore<br>
           Zürich   –   Print Matters<br>
         </p>
@@ -185,9 +200,9 @@
 
         <!-- Warenkorb -->
         <div class="warenkorb">
-          <p class="d-none d-sm-block">Your cart</p>
-          <div data-custom-icon-url="img/jobbingbaggo.png"
-               class="ec-cart-widget"></div>
+          <!--div data-custom-icon-url="img/jobbingbaggo.png"
+               class="ec-cart-widget"></div-->
+          <div class="ec-cart-widget font-weight-bold"></div>
           <div><script data-cfasync="false"
                        type="text/javascript"
                        src="https://app.ecwid.com/script.js?34316114&data_platform=code"
@@ -316,6 +331,39 @@
           </div>
         </div>
       </div>
+
+      <!-- MAG3 -->
+      <div class="col-10 version" id="3">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img class="img-fluid" src="img/Synchron_Issue%20One_Cover-klein.jpg">
+          </div>
+          <div class="col-12 col-md-6 mt-3 mt-md-0 text-left">
+
+            <div class="ecsp ecsp-SingleProduct-v2 ecsp-SingleProduct-v2-centered ecsp-Product ec-Product-435108495" itemscope itemtype="http://schema.org/Product" data-single-product-id="435108495"><div class="ecsp-title" itemprop="name" style="display:none;" content="Synchron Issue One"></div><div itemtype="http://schema.org/Offer" itemscope itemprop="offers"><div class="ecsp-productBrowser-price ecsp-price" itemprop="price" content="18.7" data-spw-price-location="button"><div itemprop="priceCurrency" content="EUR"></div></div></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?34316114&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+
+            <p><span style="font-family: 'Neue Haas Grotesk';"><strong>SYNCHRON ISSUE ONE </strong><em><strong>LIMINAL BRIDGES</strong></em></span>
+            </p>
+            <p><span style="font-family: 'Neue Haas Grotesk';"></span>
+            </p>
+            <div>Mysticism, magic, as well as individual interpretations and abstractions of spirituality and cultural rituals are the binding links between the contributions in this volume. It contains 175 pages of pure content.
+            </div>
+            <div class="mt-4">176 Pages<br> 21 x 28,5 cm
+            </div>
+            <div class="mt-4"><strong>Pre-order Delivery End of February / March 2022</strong>
+            </div>
+            <p class="mt-4">Following contributors are involved<br>
+            </p>
+            <p><span style="font-family: 'Neue Haas Grotesk';"></span>
+            </p>
+            <p><span style="font-family: 'Neue Haas Grotesk';">011668, A</span>pex, Áron Lőrincz, Adam Varab, Adrienne Kammerer, Alicia Gladston, Bastian Kussin, Beatus of Liébana, Ben Sang, Calissa Teiniker, Charles Spano, Chiu Laozhi, Claire Barrow, Christian Fjorks Thomsen, Elliot Fry, Emma Dudlyke, Emilio Subia, Eneas Bohatsch, Fitnesss, Gaspard Hers, Gaëlle Botta, Gia Söder, Hooz, Harrison Sayed, Ilana Blumberg, Jean-Baptiste Normand, Johannes Farfsing, Johannes Seluga, Jonas M. Mölzer, Jonathan Lyon, Juraj Cernak, Karl-William Klenk, Kasia Postaremczak, Katya Zhitkovskaya, Kay Yoon, Riccardo D’avola-Corte, Richard Müller, Ringo Lukas, Ruby Gaskell, Sal Salandra, Tony Cox, Ulli, Varias, Vincent Georgios Courtpozanis, Wang Zi-Won, Willi Jeschar, William Potrykus, Xavier Dartayre
+            </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   <!-- Insert 2 END -->
 </section>
@@ -675,9 +723,6 @@ Vertragsschlusses außerhalb der Europäischen Union liegen.
   </section>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/TweenMax.min.js"></script>
-  <script src="js/ScrollMagic.js"></script>
-  <script src="js/animation.gsap.js"></script>
   <script src="js/main_2.js"></script>
 </body>
 
